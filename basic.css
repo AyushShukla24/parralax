@@ -1,0 +1,104 @@
+#hi{
+    color: red;
+}
+
+table,td,th{
+    border: 3px solid black;
+    border-collapse: collapse; /*single line border*/
+    text-align: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.one{
+    height: 100px;
+    width: 200px;
+    border: 3px solid black;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;  /* important, box size will not increase but content move !!! */
+}
+
+#or{
+    background-color: orange;
+    position: sticky;
+    top: 5px;
+}
+#wh{
+    background-color: white;
+}
+#gr{
+    background-color: green;
+}
+.gr{
+    border: 2px solid black;
+    height: 150px;
+    width: 250px;
+    /* background-image: linear-gradient(red,blue); by default...UP-DOWN */
+    /* background-image: linear-gradient(to right,red,blue); red toward blue */
+    background-image: linear-gradient(to bottom right,red,blue); /* diagonal */
+    margin: 5px;
+}
+.gr1{
+    margin: 5px;
+    border: 2px solid black;
+    height: 150px;
+    width: 250px;
+    background-image: radial-gradient(red,blue);
+}
+.gr2{
+    margin: 5px;
+    height: 150px;
+    width: 100px;
+    border: 3px solid black;
+    text-shadow: 5px 5px 5px green; /* horizontal vertical blur */
+    box-shadow: 7px 7px 7px red;
+}
+.gr3{
+    margin: 5px;
+    max-height: 400px; /* expand according to content*/
+    width: 300px;
+    border: 1px solid black;
+    overflow: scroll;
+}
+#gr4{
+    width: 50px;
+    background-color: aquamarine;
+    /* transform: translate(3000); horizontal , vertical */
+    /* transform: rotate(50deg); */
+    /* transform: scale(2,5); zoom */
+    transform: skew(50deg);
+
+}
+
+.box{
+    border: 1px solid black;
+    background-color: blueviolet;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+#box3{
+    position: relative; /* default static */
+    top: 100px;
+    left: 50px;
+}
+
+/* fixed -> to fix the content even if we scroll it will fix.... like nav bar */
+/* relative -> move normally from their position */
+/* absolute ->  is positioned relative to the nearest positioned ancestorb(non static) */
+/* sticky -> is positioned based on the user's scroll position */
+
+.bo{
+    height: 50px;
+    width: 60px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    margin: 2px;
+}
+
+#bo2{
+    transform: perspective(5px) translateZ(-5px); /* for 3d transformation we have use perspectibe */
+}

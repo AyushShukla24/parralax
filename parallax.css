@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#wapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+.all{
+    display: flex;
+    align-items: flex-end;
+    height: 50px;
+}
+.two{
+    margin-left: 200px;
+}
+.sp{
+    /* top: 13px; */
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 200px;
+    color: rgb(178, 176, 176);
+}
+
+#line1{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    width: 1350px;
+    cursor: pointer;
+    color: black;
+}
+
+.button{
+    background-color: blue;
+    height: 23px;
+    width: 90px;
+    border-radius: 20px;
+}
+.space{
+    position: static;
+    height: 45vh;
+    background-color: blanchedalmond;
+}
+.mid{
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.para{
+    height: 100px;
+    width: 500px;
+}
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    position: relative;
+    object-fit: cover;
+}
+
+.ipad,.logo,.watch{
+    position: absolute;
+     /* height: 100%; */
+    /* width: 100%; */ 
+}
+
+.MB{
+    position: fixed;
+    transform: translateY(2400px) translateZ(-50px) scale(5);
+    width: 800px;
+    /* transform: translateY(200px); */
+}
+
+.ipad{
+    transform: translateX(-150px) translateY(1500px) translateZ(-25px) scale(2);
+    
+}
+.watch{
+    transform: translateX(150px) translateY(1500px) translateZ(-20px) scale(2);
+
+}
+
+.ou{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+ 

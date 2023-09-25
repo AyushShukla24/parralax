@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        #dOne{
+            background-color: white;
+            /* width: fit-content; */
+            padding: 10px;
+            margin-left: 35%;
+            border-radius: 10px;
+            height: 700px;
+            width: 550px;
+        }
+        .first{
+            display: inline-block;
+            margin: 4px;
+        }
+        label{
+            margin-left: 8px;
+            color: rgb(0, 0, 0);
+        }
+        #submit{
+            margin-right: 10px;
+        }
+        input,select{
+            margin: 7px;
+            margin-left: 13px;
+            /* padding: 15px; */
+            border: 1px solid grey;
+            border-radius: 5px;
+            width: 230px;
+            height: 55px;
+
+        }
+        textarea{
+            margin: 7px;
+            margin-left: 13px;
+            /* padding: 15px; */
+            border: 1px solid grey;
+            border-radius: 5px;
+            width: 500px;
+            height: 70px;
+
+        }
+        input:hover{
+            background-color: rgb(191, 255, 255);
+        }
+        textarea:hover{
+            background-color: rgb(191, 255, 255);
+        }
+        input value{
+            color: rgb(239, 1, 1);
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- <center> -->
+
+    <form id="dOne" action="" >
+    <div>
+       <div class="first"><caption><h1>Job Application</h1></caption>
+       </div>
+        <div class="first" style="color: blue;">
+            <h3>(Web)</h3>
+        </div>
+    </div>
+
+<div class="first">
+    <label for="Fname"><cite>First Name</cite></label> <br>
+    <input type="text" id="Fname" placeholder="Fname"> <br>
+</div>
+<div class="first">
+    <label for="Lname"><cite>Last Name</cite></label> <br>
+    <input type="text" id="Lname" pattern="A-Z" placeholder="Lname" readonly>
+</div>
+<br>
+<div class="first">
+    <label for="mail"><cite>Email</cite></label> <br>
+    <input type="email" id="mail" placeholder="xxx@gmail.com"> <br>
+</div>
+<div class="first">
+    <label for="job"><cite>Job Role</cite></label> <br>
+    <!-- <input type="text" id="job"> -->
+    <select id="job" required>
+        <option value="select">Select</option>
+        <option value="FrontEnd">FrontEnd</option>
+        <option value="BackEnd">BackEnd</option>
+        <option value="FullStack">FullStack</option>
+    </select>
+</div>
+
+<div>
+    <label for="add"><cite>Address</cite></label> <br>
+    <textarea id="add" cols="51" rows="5" placeholder="Enter Address"></textarea>
+</div>
+<br>
+
+<div class="first">
+<label for="city"><cite>City</cite></label> <br>
+<input type="text" id="city" placeholder="Enter city name">
+</div>
+<div class="first">
+    <label for="pincode"><cite>Pincode</cite></label> <br>
+    <input type="number" id="pincode" pattern="0-9" placeholder="Enter pincode" maxlength="6">
+</div>
+<br>
+<div class="first">
+<label for="date"><cite>Date</cite></label> <br>
+<input type="date" id="date">
+</div>
+<div class="first">
+    <label for="cv"><cite>Upload Your CV</cite></label> <br>
+    <input type="file" id="cv" required>
+</div>
+<br>
+<input id="submit" type="submit" value="Apply Now" style="background-color: red; color: white;">
+
+</form>
+<!-- </center> -->
+</body>
+</html>

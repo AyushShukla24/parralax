@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>    <!-- tags are not case sensitive -->
+<head>
+    <!-- favicon -->
+    <link rel="icon" href="maggie.jpg">
+    <link rel="stylesheet" href="basic.css">
+</head>
+<!-- <style>
+    #hi{
+        color: red;
+    }
+
+    table,td,th{
+        border: 3px solid black;
+        border-collapse: collapse; /*single line border*/
+        text-align: center;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+</style> -->
+    <body>
+        <!-- comment -->
+        <h1 id="head">This is the heading</h1>
+        <h2>This is the heading</h2>
+        <h3>This is the heading</h3>
+        <h4>This is the heading</h4>
+        <h5>This is the heading</h5>
+
+        <!-- paragraph -->
+        <p>this is paragraph</p>
+        <!-- break tag -->
+        <br>
+        <!-- div (a container)-->
+        <div id="hi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolore!</div>
+
+        <h3>ordered list</h3>
+        <ol>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ol>
+
+        <h3>unordered list</h3>
+        <ul>
+            <li>soya</li>
+            <li>oil</li>
+            <li>maggie</li>
+        </ul>
+        <img src="maggie.jpg" 
+        alt="maggiePicture"  
+        height="100"
+        width="100"
+        >
+        <!-- src,alt,height,widths these are attribute... always in starting tag -->
+
+        <a href="https://www.youtube.com">Link click here</a>
+
+        <!-- nested break -->
+        <p style="color: brown; background-color: yellow; text-align: center ;">hello <br> this is ayush</p>
+
+        <!-- link open in new tab -->
+        <a href="https://www.facebook.com" target="_blank">facebook in new tab</a>
+
+        <!-- horizontal line -->
+        <hr color="red">
+
+        <img src="data:image/jpeg;base64,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" alt="soya chap">
+
+        <!-- not need break to break lines -->
+        <pre>
+            hello
+            ayush shukla
+            how are 
+            you ?
+        </pre>
+
+        <b>ayush shukla</b><br>
+        <i>ayush shukla</i><br>
+        <u>ayush shukla</u><br>
+        <small>ayush shukla</small><br>
+        <del>ayush shukla</del><br>
+        <!-- <mark>ayush shukla<mark> <br> -->
+
+            <!-- superscript -->
+            <p>x<sup>3</sup> + y <sup>3</sup> = z <sup>3</sup></p>
+            <!-- subscript -->
+            <p>a <sub>1</sub> + a <sub>2</sub> = a <sub>3</sub></p>
+
+            <table>
+                <caption>TABLE</caption>
+                <thead>
+                    <tr>
+                        <th>data</th>
+                        <th>roll</th>
+                    </tr>
+                </thead>
+               
+                <tbody>
+                    <tr>
+                        <td>ayush</td>
+                        <td>345</td>
+                    </tr>
+                    <tr>
+                        <td>mangluu</td>
+                        <td>001</td>
+                    </tr>
+                    <tr>
+                        <td>okloi</td>
+                        <td>548</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>ayush</td>
+                        <td>opppp</td>
+                    </tr>
+                </tfoot>
+               
+            </table>
+            <br><br>
+
+            <!-- form -->
+            <form action="https://www.instgram.com">
+                <label for="username">Username: </label>
+                <input type="text" id="username"> <br> <br>
+                <label for="password">Password: </label>
+                <input type="password" id="password"> <br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <input type="radio">
+            <input type="checkbox">
+            <br>
+            <select name="ayush" id=""></select>
+
+            <!-- colspan rowspan -->
+            <table>
+                <colgroup>
+                    <col span="1">
+                    <col span="1" style="background-color: red;">
+                    <col span="1" style="background-color: pink;">
+                    <col span="1" style="visibility: collapse;">
+                </colgroup>
+                <tr>
+                    <!-- <td>hello</td> -->
+                    <td colspan="2">hello</td>
+                    <td rowspan="2">hello</td>
+                    <td>hello</td>
+                </tr>
+                <tr>
+                    <td>hello</td>
+                    <!-- <td>hello</td> -->
+                    <td>hello</td>
+                    <td>hello</td>
+                </tr>
+                <tr>
+                    <td>hello</td>
+                    <td>hello</td>
+                    <td>hello</td>
+                    <td>hello</td>
+                </tr>
+                <tr>
+                     <td>hello</td>
+                    <td>hello</td>
+                    <td>hello</td>
+                    <td>hello</td>
+                </tr>
+                <tr>
+                     <!-- <td>hello</td> -->
+                    <td colspan="3" rowspan="3">hello</td>
+                    <!-- <td>hello</td> -->
+                    <td>hello</td>
+                </tr>
+                <tr>
+                     <!-- <td>hello</td>
+                    <td>hello</td> -->
+                    <!-- <td>hello</td> -->
+                    <td>hello</td>
+                </tr>
+                <tr>
+                     <!-- <td>hello</td>
+                    <td>hello</td> -->
+                    <!-- <td>hello</td> -->
+                    <td>hello</td>
+                </tr>
+                <tr>
+                     <td>hello</td>
+                    <td>hello</td>
+                    <td>hello</td>
+                    <td>hello</td>
+                </tr>
+                <tr>
+                     <td>hello</td>
+                    <td>hello</td>
+                    <td>hello</td>
+                    <td>hello</td>
+                </tr>
+            </table>
+
+
+            <blockquote>
+                <p>ayush is very very cool guy</p>
+                <cite>-- ayush ji</cite>
+            </blockquote>
+
+            <a href="tel:8168376144">call me</a>
+            <a href="mailto:ayush0345.be21@chitkara.edu.in">mail me</a>
+            <a href="#head">Top of page</a>
+        
+            <!-- div->block level element -->
+            <div style="background-color: aqua;">this is div 1</div>
+            <div style="background-color: blanchedalmond;">this is div 2</div>
+
+            <!-- span->inline element -->
+            <span style="background-color: blue;">this is span 1</span>
+            <span style="background-color: brown;">this is span 2</span>
+
+            <input type="radio" id="hi"  value="hi" name="lol">
+            <input type="radio" id="hello" value="hello" name="lol">
+            <input type="radio" id="hey" value="hey" name="lol">
+
+            <!-- specificity -->
+            <!-- css inline >> ID selector >> Class selector >> tag selector -->
+
+            <div class="one" id="or">i am sticky</div>
+            <div class="one" id="wh">B</div>
+            <div class="one" id="gr">C</div>
+
+            <!-- 1pixel = 1/96 inch -->
+
+            <!-- cc gradient is change of color.... like rainbow -->
+
+            <div class="gr">color gradiant</div>
+            <div class="gr1">color gradiant</div>
+
+            <div class="gr2">Box-Shadow</div>
+            <div class="gr3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maiores laboriosam reiciendis distinctio eius, illo nulla dicta provident atque sit perferendis accusantium, cum, deserunt libero. Accusamus iusto voluptatem commodi, ea quisquam et harum reiciendis, quod beatae ratione soluta labore, enim vel repellendus itaque quas explicabo aliquid voluptas quam! Fuga aliquid ea minus omnis, distinctio facere repellat esse aut assumenda natus voluptatum. Veritatis voluptatibus enim esse quibusdam laborum commodi tenetur sunt quis ratione fuga sequi minus porro quam, vitae eaque quia dolorum eligendi rem numquam qui labore voluptates? Labore laborum, esse blanditiis, fugit consectetur odio consequuntur velit earum quis, rerum error! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum architecto saepe perferendis suscipit ad ratione error repellendus deleniti voluptatum quisquam vel tempore, maiores odio corrupti nisi expedita hic adipisci deserunt ullam! Accusamus voluptatem quo temporibus iusto iste eum, maiores ab nobis modi repudiandae neque aliquid iure cupiditate similique beatae pariatur reiciendis! Adipisci magnam eligendi voluptatum ipsa suscipit sit itaque! Quasi id placeat error, dolor eligendi odio sit laboriosam atque modi aspernatur, fuga necessitatibus impedit, doloribus eveniet voluptas pariatur minima ipsum. Ea ratione dolores laborum a dolor consequuntur sapiente. Vel magni maiores ipsa minima ut fuga exercitationem facilis distinctio libero! Vel.</div>
+
+            <div id="gr4">ABC</div>
+            <!-- position -->
+            <div class="all">
+
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+            <div class="box" id="box4"></div>
+
+            <div class="bo"></div>
+            <div class="bo" id="bo2"></div>
+            <div class="bo"></div>
+
+        </div>
+    </body>
+</html>
